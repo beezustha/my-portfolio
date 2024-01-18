@@ -2,7 +2,14 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				lato: ["Lato"],
+				acorn: ["acorn", "sans"],
+				ppneuemontreal: ["ppneuemontreal", "sans"],
+			},
+		},
 	},
+
 	plugins: [],
 };
