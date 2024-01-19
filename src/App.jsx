@@ -1,19 +1,24 @@
-import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./layout/Header";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/about";
 
-const App = () => {
-	return (
-		<Router>
-			<Header />
-			<Routes>
-				<Route path="/experience" element={<Experience />} />
-				<Route path="/" element={<Home />} />
-			</Routes>
-		</Router>
-	);
-};
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Home />
+        <About />
+        <Projects />
+        <Experience />
+        {/* <Resume /> */}
+        {/* <Footer /> */}
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
