@@ -4,9 +4,10 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				lato: ["Lato"],
+				nav: ["Poppins", "sans"],
+				header: ["Slabo"],
 				acorn: ["acorn", "sans"],
-				ppneuemontreal: ["ppneuemontreal", "sans"],
+				para: ["Pathway Extreme", "sans"],
 			},
 		},
 	},
