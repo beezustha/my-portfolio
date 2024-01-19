@@ -6,10 +6,10 @@ import profile from "../assets/profile.png";
 const Home = () => {
   return (
     <>
-      <div className="font-acorn h-screen bg-[#FCF6F5] text-black-700 lg:w-[1/2]">
+      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700 lg:w-[1/2]">
         <div className="">
           {" "}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between lg:w-[40%] ">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -17,7 +17,7 @@ const Home = () => {
               className="text-center"
             >
               <img
-                className="w-full p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] items-center lg:w-60 h-60 block mx-auto mt-10"
+                className="p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] max-h-[50%] block mx-auto mt-10 origin-right lg:h-auto max-w-[50%]"
                 src={profile}
                 alt="Profile"
               />

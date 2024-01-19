@@ -1,5 +1,5 @@
 // Navbar.js
-import React, { useState } from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi"; // Import the hamburger icon
 import { Link } from "react-scroll";
 
@@ -13,11 +13,11 @@ const Navbar = () => {
   return (
     <nav className="bg-purple-800 p-4">
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="text-white text-2xl font-bold">
+        <Link to="/" className="text-white text-2xl font-bold cursor-pointer">
           Beezu
         </Link>
 
-        <div className="hidden md:flex space-x-4 text-white font-acorn">
+        <div className="hidden md:flex space-x-4 text-white font-acorn space-x-8">
           <Link
             activeClass="active"
             to="/"
@@ -25,6 +25,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            className="cursor-pointer"
           >
             Home
           </Link>
@@ -35,6 +36,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            className="cursor-pointer"
           >
             About
           </Link>
@@ -45,6 +47,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            className="cursor-pointer"
           >
             Experience
           </Link>
@@ -61,7 +64,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-800 p-4">
+        <div className="md:hidden bg-purple-800 p-4 text-white flex flex-col">
           <Link
             activeClass="active"
             to="/"
