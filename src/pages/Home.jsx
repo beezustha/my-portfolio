@@ -6,18 +6,18 @@ import profile from "../assets/profile.png";
 const Home = () => {
   return (
     <>
-      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700 lg:w-[1/2]">
+      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700 lg:w-[1/2] mt-11">
         <div className="">
           {" "}
-          <div className="flex items-center justify-between lg:w-[40%] ">
+          <div className="flex items-center justify-center">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-center"
+              className=""
             >
               <img
-                className="p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] max-h-[50%] block mx-auto mt-10 origin-right lg:h-auto max-w-[50%]"
+                className="p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] max-h-[50%] block mx-auto mt-10 origin-right xl:w-[20%]"
                 src={profile}
                 alt="Profile"
               />
@@ -50,7 +50,7 @@ const Home = () => {
             className=""
           >
             {" "}
-            <p className="font-ppneuemontreal w-full text-md text-center px-7 pt-2 leading-loose my-6 lg:w-[500px] mx-auto">
+            <p className="font-ppneuemontreal w-full text-[18px] text-center px-7 pt-2 leading-loose my-6 lg:w-[700px] mx-auto">
               Hello, I am Bijaya Shrestha, a skilled Front-end developer
               dedicated to crafting seamless digital experiences. My expertise
               lies in creating visually appealing and functional websites.
@@ -65,10 +65,17 @@ const Home = () => {
                   {" "}
                   <InstagramIcon />
                 </svg>
-                <svg className="w-9 h-9 text-black">
+                <a
+                  href="https://github.com/beezustha"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
-                  <GitHubIcon />
-                </svg>
+                  <svg className="w-9 h-9 text-black">
+                    {" "}
+                    <GitHubIcon />
+                  </svg>
+                </a>
               </div>
             </div>
           </motion.div>

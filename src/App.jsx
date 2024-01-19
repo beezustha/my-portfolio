@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
@@ -15,7 +16,8 @@ function App() {
         <Projects />
         <Experience />
         {/* <Resume /> */}
-        {/* <Footer /> */}
+
+        <Footer />
       </BrowserRouter>
     </div>
   );

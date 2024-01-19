@@ -11,13 +11,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-purple-800 p-4">
+    <nav className="bg-purple-800 p-4 font-acorn fixed top-0 w-full z-10">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="text-white text-2xl font-bold cursor-pointer">
           Beezu
         </Link>
 
-        <div className="hidden md:flex space-x-4 text-white font-acorn space-x-8">
+        <div className="hidden md:flex text-white font-acorn space-x-8">
           <Link
             activeClass="active"
             to="/"
