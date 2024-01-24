@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Preloader from "./component/Preloader";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
-import Experience from "./pages/Experience";
+
 import Home from "./pages/Home";
 import About from "./pages/about";
 
@@ -30,8 +30,6 @@ function App() {
           <Home />
           <About />
 
-          {/* <Experience /> */}
-          {/* <Resume /> */}
           <Footer />
         </BrowserRouter>
       )}
