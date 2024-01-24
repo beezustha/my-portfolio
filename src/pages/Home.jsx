@@ -30,7 +30,7 @@ const Home = () => {
               transition={{ duration: 1 }}
               className="py-3.5 px-3 text-black-500 text-4xl font-semibold text-center text-[#4b0908]"
             >
-              <h2 className="font-poppins">Bijaya Shrestha</h2>
+              <h2 className="font-header">Bijaya Shrestha</h2>
             </motion.div>
           </h2>
           <motion.div

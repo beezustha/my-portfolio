@@ -5,6 +5,7 @@ import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Skills from "./pages/Skills";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
           <Header />
           <Home />
           <About />
+          <Skills />
           <Footer />
         </BrowserRouter>
       )}

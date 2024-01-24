@@ -4,7 +4,7 @@ import about2 from "../assets/img/about-2.png";
 const About = () => {
   return (
     <>
-      <section id="about" className="bg-teal-600 text-white w-full h-full">
+      <section id="about" className="bg-teal-600 text-white w-full h-screen">
         <div className="header">
           <h3 className="text-header text-center py-10">About Me</h3>
         </div>

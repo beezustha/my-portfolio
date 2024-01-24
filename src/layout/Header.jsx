@@ -11,13 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-purple-800 p-4 fixed font-poppins top-0 w-full z-10">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="text-white text-2xl cursor-pointer">
-          Beezu
-        </Link>
-
-        <div className="hidden md:flex text-white font-nav space-x-8">
+    <nav className="bg-purple-800 p-4 fixed font-poppins top-0 w-full z-10 rounded-b-lg">
+      <div className="container mx-auto flex items-center justify-end md:justify-around lg:justify-around">
+        <div className="hidden md:flex text-white font-nav space-x-8 items-center">
           <Link
             activeClass="active"
             to="about"
@@ -40,7 +36,6 @@ const Navbar = () => {
           >
             Skills
           </Link>
-
           <Link
             activeClass="active"
             to="experience"
@@ -76,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-purple-800 p-4 text-white flex flex-col ">
+        <div className="md:hidden bg-purple-800 p-4 text-white flex flex-col items-center">
           <Link
             activeClass="active"
             to="/"
@@ -85,7 +80,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="py-[3px]"
+            className="my-[5px] cursor-pointer"
           >
             Home
           </Link>
@@ -97,7 +92,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="py-[3px]"
+            className="my-[5px] cursor-pointer"
           >
             About
           </Link>
@@ -109,7 +104,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="py-[3px]"
+            className="my-[5px] cursor-pointer"
           >
             Experience
           </Link>
