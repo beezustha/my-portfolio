@@ -5,38 +5,38 @@ import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
+import About from "./pages/about";
 
 function App() {
-	const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		// Simulate a delay of 3 seconds
-		const timer = setTimeout(() => {
-			setLoading(false);
-		}, 2000);
+  useEffect(() => {
+    // Simulate a delay of 3 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-		// Clear the timeout on component unmount (cleanup)
-		return () => clearTimeout(timer);
-	}, []); // Empty dependency array means this effect runs once after the initial render
+    // Clear the timeout on component unmount (cleanup)
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array means this effect runs once after the initial render
 
-	return (
-		<div className="App">
-			{loading ? (
-				<Preloader />
-			) : (
-				<BrowserRouter>
-					<Header />
-					<Home />
-					{/* <About />
-          <Skills />
-          <Projects /> */}
-					{/* <Experience /> */}
-					{/* <Resume /> */}
-					<Footer />
-				</BrowserRouter>
-			)}
-		</div>
-	);
+  return (
+    <div className="App">
+      {loading ? (
+        <Preloader />
+      ) : (
+        <BrowserRouter>
+          <Header />
+          <Home />
+          <About />
+
+          {/* <Experience /> */}
+          {/* <Resume /> */}
+          <Footer />
+        </BrowserRouter>
+      )}
+    </div>
+  );
 }
 
 export default App;
