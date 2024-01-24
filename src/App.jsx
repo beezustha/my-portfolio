@@ -3,9 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import Preloader from "./component/Preloader";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
-
+import About from "./pages/About";
 import Home from "./pages/Home";
-import About from "./pages/about";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +28,6 @@ function App() {
           <Header />
           <Home />
           <About />
-
           <Footer />
         </BrowserRouter>
       )}

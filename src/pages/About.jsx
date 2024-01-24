@@ -1,5 +1,6 @@
-import about1 from "../assets/img/about-1.png";
-import about2 from "../assets/img/about-2.png";
+import React from "react";
+import { about1 } from "../assets/img/about-1.png";
+import { about2 } from "../assets/img/about-2.png";
 
 const About = () => {
   return (
@@ -21,17 +22,6 @@ const About = () => {
               design and a commitment to staying updated with the latest
               technologies, I enjoy the process of bringing ideas to life in the
               digital realm.
-            </div>
-            <div className="hidden font-para description text-para text-center sm:text-center md:text-left">
-              In my coding adventures, I find joy in the simplicity of solving
-              complex problems and turning challenges into opportunities for
-              growth. Whether it's implementing new features or optimizing
-              existing ones, I believe in the power of clean and efficient code
-              to make a positive impact. When I'm not immersed in the world of
-              React components and JavaScript, you'll likely find me exploring
-              new design trends, sipping on a cup of coffee, and brainstorming
-              creative solutions to enhance user experiences on the web. Let's
-              build something amazing together!
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-[1/2] py-4 px-8">
