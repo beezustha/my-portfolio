@@ -3,11 +3,13 @@ import { BrowserRouter } from "react-router-dom";
 import Preloader from "./component/Preloader";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
-import Experience from "./pages/Experience";
+import About from "./pages/About";
 import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Spotify from "./pages/Spotify";
 
 function App() {
-	const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		// Simulate a delay of 3 seconds
@@ -15,28 +17,26 @@ function App() {
 			setLoading(false);
 		}, 1000);
 
-		// Clear the timeout on component unmount (cleanup)
-		return () => clearTimeout(timer);
-	}, []); // Empty dependency array means this effect runs once after the initial render
+    // Clear the timeout on component unmount (cleanup)
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array means this effect runs once after the initial render
 
-	return (
-		<div className="App">
-			{loading ? (
-				<Preloader />
-			) : (
-				<BrowserRouter>
-					<Header />
-					<Home />
-					{/* <About />
+  return (
+    <div className="App">
+      {loading ? (
+        <Preloader />
+      ) : (
+        <BrowserRouter>
+          <Header />
+          <Home />
+          <About />
           <Skills />
-          <Projects /> */}
-					{/* <Experience /> */}
-					{/* <Resume /> */}
-					<Footer />
-				</BrowserRouter>
-			)}
-		</div>
-	);
+          <Spotify />
+          <Footer />
+        </BrowserRouter>
+      )}
+    </div>
+  );
 }
 
 export default App;
