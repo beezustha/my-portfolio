@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-purple-800 p-4 fixed font-poppins top-0 w-full z-10 rounded-b-lg">
+    <nav className="bg-purple-800 p-4 fixed font-poppins top-0 w-full z-10 rounded-b-lg shadow-2xl shadow-purple-300">
       <div className="container mx-auto flex items-center justify-end md:justify-around lg:justify-around">
         <div className="hidden md:flex text-white font-nav space-x-8 items-center">
           <Link

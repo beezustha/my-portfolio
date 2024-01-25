@@ -5,7 +5,7 @@ const marqueeVariants = {
     x: ["-100%", "100%"],
     transition: {
       x: {
-        duration: 10, // Adjust the duration as needed
+        duration: 15, // Adjust the duration as needed
         repeat: Infinity,
         repeatType: "loop",
         ease: "linear",
@@ -25,9 +25,19 @@ const Marquee = () => {
           initial="initial"
           animate="animate"
         >
-          <div className="flex flex-row mr-5">
-            <p>HTML</p>
-            <p>CSS</p>
+          <div className="flex flex-row my-5">
+            <div className="w-auto rounded-md bg-teal-600 mx-5 px-6 py-2 fonts-poppins text-white">
+              HTML
+            </div>
+            <div className="w-auto rounded-md bg-teal-600 mx-5 px-6 py-2 fonts-poppins text-white">
+              CSS
+            </div>
+            <div className="w-auto rounded-md bg-teal-600 mx-5 px-6 py-2 fonts-poppins text-white">
+              Javascript
+            </div>
+            <div className="w-auto rounded-md bg-teal-600 mx-5 px-6 py-2 fonts-poppins text-white">
+              ReactJS
+            </div>
           </div>
         </motion.div>
       </div>

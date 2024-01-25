@@ -9,7 +9,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans"],
-        header: ["Slabo"],
+        slabo: ["Slabo"],
         acorn: ["acorn", "sans"],
         para: ["Pathway Extreme", "sans"],
       },

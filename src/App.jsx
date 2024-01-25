@@ -6,6 +6,7 @@ import Header from "./layout/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
+import Spotify from "./pages/Spotify";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
           <Home />
           <About />
           <Skills />
+          <Spotify />
           <Footer />
         </BrowserRouter>
       )}
