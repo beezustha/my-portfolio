@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
 import about1 from "../assets/img/about-1.png";
 import about2 from "../assets/img/about-2.png";
 import about3 from "../assets/img/about-3.png";
-
 const About = () => {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
   return (
     <>
       <section
@@ -35,13 +39,21 @@ const About = () => {
             </div>
           </div>
           {/* Card Sections */}
+
           <div className="w-full md:w-1/2 lg:w-[1/2] px-10">
-            <div className="grid gap-y-4 gap-x-4 grid-cols-2">
-              <img src={about1} alt="" className="w-full col-span-2" />
-              <img src={about2} alt="" className="w-full h-auto" />
-              <img src={about3} alt="" className="w-full h-auto" />
-            </div>
-            {/* <div className="image-section flex flex-row justify-center md:w-full">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={variants}
+              transition={{ duration: 1 }}
+              className="text-white shadow-lg"
+            >
+              <div className="grid gap-y-4 gap-x-4 grid-cols-2">
+                <img src={about1} alt="" className="w-full col-span-2" />
+                <img src={about2} alt="" className="w-full h-auto" />
+                <img src={about3} alt="" className="w-full h-auto" />
+              </div>
+              {/* <div className="image-section flex flex-row justify-center md:w-full">
               <img src={about1} alt="" className="w-[1/2] px-6" />
               <img
                 src={about2}
@@ -49,6 +61,7 @@ const About = () => {
                 className="hidden md:w-[1/2] lg:w-[1/2] px-6 md:block"
               />
             </div> */}
+            </motion.div>
           </div>
         </div>
       </section>

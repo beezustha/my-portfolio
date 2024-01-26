@@ -11,11 +11,11 @@ import Spotify from "./pages/Spotify";
 function App() {
   const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		// Simulate a delay of 3 seconds
-		const timer = setTimeout(() => {
-			setLoading(false);
-		}, 1000);
+  useEffect(() => {
+    // Simulate a delay of 3 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
 
     // Clear the timeout on component unmount (cleanup)
     return () => clearTimeout(timer);
@@ -28,9 +28,10 @@ function App() {
       ) : (
         <BrowserRouter>
           <Header />
-          <Home />
+          {/* <Home /> */}
           <About />
           <Skills />
+
           <Spotify />
           <Footer />
         </BrowserRouter>
