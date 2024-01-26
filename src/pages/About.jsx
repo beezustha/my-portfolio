@@ -17,10 +17,10 @@ const About = () => {
           <div className="w-full md:w-1/2 text-[16px] lg:w-[1/2] p-4 lg:pl-16">
             <div className="font-para description text-center sm:text-center md:text-left leading-loose">
               <p>
-                Hello! I'm Bijaya Shrestha, A passionate front-end developer
-                with a love for crafting user interfaces that not only look good
-                but also provide seamless experiences. My journey in the world
-                of web development began with a fascination for turning lines of
+                I'm Bijaya Shrestha, A passionate front-end developer with a
+                love for crafting user interfaces that not only look good but
+                also provide seamless experiences. My journey in the world of
+                web development began with a fascination for turning lines of
                 code into visually appealing and functional websites.
               </p>
 
