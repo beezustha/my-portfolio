@@ -9,35 +9,35 @@ import Skills from "./pages/Skills";
 import Spotify from "./pages/Spotify";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate a delay of 3 seconds
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+	useEffect(() => {
+		// Simulate a delay of 3 seconds
+		const timer = setTimeout(() => {
+			setLoading(false);
+		}, 1000);
 
-    // Clear the timeout on component unmount (cleanup)
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array means this effect runs once after the initial render
+		// Clear the timeout on component unmount (cleanup)
+		return () => clearTimeout(timer);
+	}, []); // Empty dependency array means this effect runs once after the initial render
 
-  return (
-    <div className="App">
-      {loading ? (
-        <Preloader />
-      ) : (
-        <BrowserRouter>
-          <Header />
-          {/* <Home /> */}
-          <About />
-          <Skills />
+	return (
+		<div className="App">
+			{loading ? (
+				<Preloader />
+			) : (
+				<BrowserRouter>
+					<Header />
+					<Home />
+					<About />
+					<Skills />
 
-          <Spotify />
-          <Footer />
-        </BrowserRouter>
-      )}
-    </div>
-  );
+					<Spotify />
+					<Footer />
+				</BrowserRouter>
+			)}
+		</div>
+	);
 }
 
 export default App;
