@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      zIndex: {
+        100: "100",
+      },
       fontSize: {
         para: "18px",
         header: "36px", // Custom font size for headings
