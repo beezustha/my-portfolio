@@ -1,4 +1,3 @@
-import React from "react";
 import project from "../assets/img/project1.jpg";
 const Projects = () => {
   const taskifyLink = () => {

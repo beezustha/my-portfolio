@@ -30,11 +30,11 @@ function App() {
       ) : (
         <BrowserRouter>
           <Header />
-          {/* <Home /> */}
+          <Home />
           <About />
           <Projects />
-          {/* 
-          <Spotify /> */}
+
+          <Spotify />
           {/* <Contact /> */}
           {/* <Footer /> */}
         </BrowserRouter>
