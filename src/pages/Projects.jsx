@@ -28,7 +28,7 @@ const Projects = () => {
             Ecommerce Application
           </p>
         </div>
-        <div className="relative w-full h-[200px] pr-5 my-2">
+        <div className="relative w-full h-[200px] pr-5 pl-5 my-2">
           <img
             onClick={taskifyLink}
             src={project}
