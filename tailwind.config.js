@@ -11,6 +11,7 @@ export default {
         header: "36px", // Custom font size for headings
       },
       fontFamily: {
+        mulish: ["Mulish", "sans"],
         poppins: ["Poppins", "sans"],
         slabo: ["Slabo"],
         acorn: ["acorn", "sans"],
