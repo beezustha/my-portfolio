@@ -1,6 +1,3 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.png";
 const Home = () => {
@@ -17,7 +14,7 @@ const Home = () => {
               className=""
             >
               <img
-                className="p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] max-h-[50%] block mx-auto mt-10 origin-right xl:w-[20%]"
+                className="w-[200px] p-3.5 text-black-500 text-5xl font-semibold text-center text-[#6F745D] max-h-[50%] block mx-auto mt-10 origin-right xl:w-[20%]"
                 src={profile}
                 alt="Profile"
               />
@@ -30,19 +27,11 @@ const Home = () => {
               transition={{ duration: 1 }}
               className="py-3.5 px-3 text-black-500 text-4xl font-semibold text-center text-[#4b0908]"
             >
-              <h2 className="font-poppins">Bijaya Shrestha</h2>
+              <h2 className="px-3.5 mb-4 text-black-500 text-2xl text-center font-poppins font-bold">
+                Front End Developer
+              </h2>
             </motion.div>
           </h2>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.4 }}
-            className=""
-          >
-            <h2 className="px-3.5 mb-4 text-black-500 text-2xl text-center font-poppins">
-              Front End Developer
-            </h2>
-          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,21 +39,21 @@ const Home = () => {
             className=""
           >
             {" "}
-            <p className="font-mulish w-full text-[18px] text-center px-7 pt-2 leading-loose my-6 lg:w-[700px] mx-auto">
+            <p className="font-mulish w-full text-[1.8 rem] text-center px-7 leading-loose mb-6 lg:w-[700px] mx-auto">
               Hello, I am Bijaya Shrestha, a skilled Front-end developer
               dedicated to crafting seamless digital experiences. My expertise
               lies in creating visually appealing and functional websites.
             </p>
             <div className="flex items-center justify-around text-white-900 mt-6 mb-6">
-              <div className="flex flex-row items-center justify-center space-x-2 mt-5">
+              <div className="flex flex-row items-center justify-center space-x-2">
                 <a href="https://np.linkedin.com/in/beezu">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-linkedin"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
+                    width={28}
+                    height={28}
+                    viewBox="0 0 28 28"
                     strokeWidth={2}
                     stroke="currentColor"
                     fill="none"
@@ -79,9 +68,9 @@ const Home = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-linkedin"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
                     strokeWidth="2"
                     stroke="currentColor"
                     fill="none"
@@ -101,7 +90,7 @@ const Home = () => {
           </motion.div>
           <div className="text-stack-main">
             <div className="header text-center text-2xl">
-              <p className="inline-block border-b-4 border-indigo-600">
+              <p className="inline-block border-b-4 border-indigo-600 mb-4">
                 Tech Stack
               </p>
             </div>
