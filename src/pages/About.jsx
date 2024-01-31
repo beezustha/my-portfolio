@@ -25,7 +25,7 @@ const About = () => {
             About Me
           </h3>
         </div>
-        <div className="flex flex-col justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
+        <div className="flex flex-col-reverse justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
           <div className="w-full md:w-1/2 text-[16px] lg:w-[1/2] p-4 lg:pl-16">
             <div className="font-para description text-center sm:text-center md:text-left leading-loose">
               <p>
@@ -34,15 +34,6 @@ const About = () => {
                 also provide seamless experiences. My journey in the world of
                 web development began with a fascination for turning lines of
                 code into visually appealing and functional websites.
-              </p>
-
-              <p>
-                {" "}
-                From creating responsive layouts to ensuring smooth
-                interactions, I thrive on the dynamic nature of front-end
-                development. With a keen eye for design and a commitment to
-                staying updated with the latest technologies, I enjoy the
-                process of bringing ideas to life in the digital realm.
               </p>
             </div>
           </div>
@@ -59,17 +50,17 @@ const About = () => {
                 <img
                   src={about1}
                   alt=""
-                  className="rounded-2xl w-full col-span-2 z-50 "
+                  className="rounded-2xl w-full col-span-2 z-50"
                 />
                 <img
                   src={about2}
                   alt=""
-                  className="rounded-2xl w-full h-auto"
+                  className="rounded-2xl w-full h-auto lg:hidden"
                 />
                 <img
                   src={about3}
                   alt=""
-                  className="rounded-2xl w-full h-auto"
+                  className="rounded-2xl w-full h-auto lg:hidden"
                 />
               </div>
               {/* <div className="image-section flex flex-row justify-center md:w-full">

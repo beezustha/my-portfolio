@@ -33,8 +33,7 @@ function App() {
           <Home />
           <About />
           <Projects />
-
-          <Spotify />
+          {/* <Spotify /> */}
           <Contact />
           <Footer />
         </BrowserRouter>

@@ -3,7 +3,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700 lg:w-[1/2] mt-11">
+      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700">
         <div className="flex flex-col-reverse lg:flex lg:flex-row lg:w-3/4 pt-12 md:justify-between mx-auto">
           {" "}
           {/* hero etxt */}
