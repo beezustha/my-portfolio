@@ -1,126 +1,73 @@
-import { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 const Contact = () => {
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `newPath`;
-    navigate(path);
-  };
-  const [datas, setDatas] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    message: "",
-  });
-  //   console.log(datas, "hello");
-  //   const handleChange = (e) => {
-  //     setDatas({ ...datas, [e.target.name]: e.target.value });
-  //   };
-  //   //   const notify = () => toast("Here is your toast.");
-  const notify = (e) => {
-    e.preventDefault();
-    toast("Form submitted sucessfully");
-    console.log(datas);
-    setDatas({});
-  };
   return (
-    <>
-      <section className="bg-teal-800 w-full text-white p-8">
-        <h3 className="text-header font-slabo">Contact Me</h3>
-        <form className="font-poppins">
-          <div className="mb-6 flex justify-center w-full">
-            <div>
-              <label
-                htmlFor="name"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Name
-              </label>
-              <input
-                // onChange={handleChange}
-                value={datas.name}
-                type="text"
-                id="name"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                placeholder="Name"
-                required
+    <section>
+      <div className="bg-purple-600 w-full py-10">
+        <div className="header pt-8">
+          <h3 className="text-header text-[#c8f560] text-center py-10 font-acorn">
+            Contact Information
+          </h3>
+        </div>
+        <div className="contact-icon flex flex-col justify-center lg:flex-row lg:justify-evenly">
+          <div className="location flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-map-pin-filled text-white mt-5"
+              width={40}
+              height={40}
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              fill="white"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                strokeWidth={0}
+                fill="currentColor"
               />
-            </div>
+            </svg>
+            <p className="text-2xl font-mulish text-white mt-5"> Location</p>
+            <p className="text-xl font-mulish text-white mt-5">
+              Kathmandu, Nepal
+            </p>
           </div>
-          <div className="mb-6 flex justify-center">
-            <div>
-              {" "}
-              <label
-                htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Email address
-              </label>
-              <input
-                // onChange={handleChange}
-                value={datas.email}
-                type="email"
-                id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="beexustha@gmail.com"
-                required
+          <div className="location flex flex-col items-center mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-mail-filled text-white"
+              width={40}
+              height={40}
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                strokeWidth="0"
+                fill="currentColor"
               />
-            </div>
-          </div>
-          <div className="mb-6 flex justify-center">
-            <div>
-              {" "}
-              <label
-                htmlFor="contact"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Contact
-              </label>
-              <input
-                // onChange={handleChange}
-                value={datas.contact}
-                type="text"
-                id="contact"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Contact Number"
-                required
+              <path
+                d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                strokeWidth="0"
+                fill="currentColor"
               />
-            </div>
+            </svg>
+            <p className="text-2xl font-mulish text-white mt-5">Mail Address</p>
+            <p className="text-xl font-mulish text-white mt-5">
+              beezustha@gmail.com
+            </p>
           </div>
-
-          <div className="mb-6 flex justify-center">
-            <div>
-              <label
-                htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
-                placeholder="Leave a comment..."
-              ></textarea>
-            </div>
-          </div>
-          <div className="mb-6 flex justify-center">
-            <div>
-              <button
-                onClick={routeChange}
-                type="submit"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Submit
-              </button>
-              <Toaster />
-            </div>
-          </div>
-        </form>
-      </section>
-    </>
+        </div>
+      </div>
+    </section>
   );
 };
 

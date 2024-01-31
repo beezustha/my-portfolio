@@ -14,7 +14,6 @@ const Projects = () => {
         </h3>
       </div>
       {/* Project Card Sections */}
-
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="relative w-full h-[200px] pr-5 pl-5 my-2">
           <img

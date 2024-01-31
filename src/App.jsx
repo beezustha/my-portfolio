@@ -35,8 +35,8 @@ function App() {
           <Projects />
 
           <Spotify />
-          {/* <Contact /> */}
-          {/* <Footer /> */}
+          <Contact />
+          <Footer />
         </BrowserRouter>
       )}
     </div>
