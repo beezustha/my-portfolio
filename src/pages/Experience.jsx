@@ -13,7 +13,6 @@ const Experience = () => {
       address: "Kupondole, Kathmandu",
     },
   ];
-
   return (
     <section name="experience" className="" id="experience">
       {companies.map((company) => {
