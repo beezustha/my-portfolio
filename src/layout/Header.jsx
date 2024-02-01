@@ -19,7 +19,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={900}
+            offset={-100}
             duration={1000}
             className="cursor-pointer"
           >
