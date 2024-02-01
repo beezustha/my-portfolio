@@ -27,14 +27,14 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
-            to="skills"
+            to="projects"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={100}
             duration={500}
             className="cursor-pointer"
           >
-            Skills
+            My Projects
           </Link>
           <Link
             activeClass="active"
@@ -89,7 +89,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-100}
             duration={500}
             onClick={() => setIsOpen(false)}
             className="my-[5px] cursor-pointer"

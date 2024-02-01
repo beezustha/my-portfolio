@@ -3,17 +3,17 @@ import React from "react";
 const Contact = () => {
   return (
     <section>
-      <div className="bg-purple-600 w-full py-10">
+      <div className="bg-[#FCF6F5] w-full py-10 flex justify-evenly lg:flex flex-col">
         <div className="header pt-8">
-          <h3 className="text-header text-[#c8f560] text-center py-10 font-acorn">
+          <h3 className="text-header text-[#2D2E32] text-center py-10 font-acorn font-bold">
             Contact Information
           </h3>
         </div>
-        <div className="contact-icon flex flex-col justify-center lg:flex-row lg:justify-evenly">
+        <div className="contact-icon flex flex-col justify-evenly lg:flex-row lg:justify-between lg:space-x-10">
           <div className="location flex flex-col items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-map-pin-filled text-white mt-5"
+              className="icon icon-tabler icon-tabler-map-pin-filled text-[#2D2E32] mt-5"
               width={40}
               height={40}
               viewBox="0 0 24 24"
@@ -30,15 +30,18 @@ const Contact = () => {
                 fill="currentColor"
               />
             </svg>
-            <p className="text-2xl font-mulish text-white mt-5"> Location</p>
-            <p className="text-xl font-mulish text-white mt-5">
+            <p className="text-2xl font-mulish text-[#2D2E32] mt-5">
+              {" "}
+              Location
+            </p>
+            <p className="text-xl font-mulish text-[#2D2E32] mt-5">
               Kathmandu, Nepal
             </p>
           </div>
           <div className="location flex flex-col items-center mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-mail-filled text-white"
+              className="icon icon-tabler icon-tabler-mail-filled text-[#2D2E32]"
               width={40}
               height={40}
               viewBox="0 0 24 24"
@@ -60,8 +63,10 @@ const Contact = () => {
                 fill="currentColor"
               />
             </svg>
-            <p className="text-2xl font-mulish text-white mt-5">Mail Address</p>
-            <p className="text-xl font-mulish text-white mt-5">
+            <p className="text-2xl font-mulish text-[#2D2E32] mt-5">
+              Mail Address
+            </p>
+            <p className="text-xl font-mulish text-[#2D2E32] mt-5">
               beezustha@gmail.com
             </p>
           </div>
