@@ -10,7 +10,7 @@ const Projects = () => {
     <section id="project" className="relative w-3/4 h-full pb-10 mt-10 mx-auto">
       <div className="project-section">
         <div className="header ">
-          <h3 className="text-header text-[#2D2E32] text-center py-10 font-acorn font-bold">
+          <h3 className="text-header text-[#2D2E32] text-center py-10 font-poppins font-bold">
             My Projects
           </h3>
           <div className="project-details">

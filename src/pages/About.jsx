@@ -23,7 +23,7 @@ const About = () => {
               <div className="flex flex-col ">
                 {" "}
                 <div className="">
-                  <h3 className="text-header text-[#2D2E32] text-center font-acorn font-bold lg:text-left">
+                  <h3 className="text-header text-[#2D2E32] text-center font-poppins font-bold lg:text-left">
                     About Me
                   </h3>
                 </div>
