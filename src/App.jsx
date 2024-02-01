@@ -26,20 +26,20 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (
+      {/* {loading ? (
         <Preloader />
-      ) : (
-        <BrowserRouter>
-          <Header />
-          <Home />
-          <About />
-          <Projects />
-          {/* <Spotify /> */}
-          <Banner />
-          <Contact />
-          <Footer />
-        </BrowserRouter>
-      )}
+      ) : ( */}
+      <BrowserRouter>
+        <Header />
+        <Home />
+        <About />
+        <Projects />
+        {/* <Spotify /> */}
+        <Banner />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
+      {/* )} */}
     </div>
   );
 }
