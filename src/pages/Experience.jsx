@@ -1,30 +1,11 @@
+import React from "react";
+
 const Experience = () => {
-  const companies = [
-    {
-      name: "Infodevelopers Pvt Ltd",
-      address: "Sanepa, Lalitpur",
-    },
-    {
-      name: "Hamrobazar Pvt Ltd",
-      address: "Thapathali, Kathmandu",
-    },
-    {
-      name: "Code Himalaya Pvt Ltd",
-      address: "Kupondole, Kathmandu",
-    },
-  ];
   return (
-    <section name="experience" className="" id="experience">
-      {companies.map((company) => {
-        return (
-          <>
-            <ul>
-              <li>{company.name}</li>
-              <li>{company.address}</li>
-            </ul>
-          </>
-        );
-      })}
+    <section>
+      <div>
+        <p>This is the experience section</p>
+      </div>
     </section>
   );
 };

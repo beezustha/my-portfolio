@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import about1 from "../assets/img/about-1.png";
 import about2 from "../assets/img/about-2.png";
 import about3 from "../assets/img/about-3.png";
+import football from "../assets/img/football.png";
 import jupiter from "../assets/img/jupiter.png";
 const About = () => {
   const variants = {
@@ -10,15 +11,12 @@ const About = () => {
   };
   return (
     <>
-      <section
-        id="about"
-        className="relative bg-[#21251f] text-white w-full h-full pb-10 mt-10"
-      >
+      <section id="about" className="relative w-3/4 h-full pb-10 mt-10 mx-auto">
         {/* Background icmage */}
         <img
           src={jupiter}
           alt=""
-          className="absolute w-[120px] top-0 right-0 md:w-[200px] md:top-0 md:right-50 lg:w-[300px] lg:top-0 lg:right-10 z-20"
+          className="absolute w-[120px] top-40 right-10 md:w-[200px] md:top-0 md:right-50 lg:w-[300px] lg:top-0 lg:right-10 z-9999"
         />
         <div className="header">
           <h3 className="text-header text-[#c8f560] text-center py-10 font-acorn">
@@ -26,7 +24,7 @@ const About = () => {
           </h3>
         </div>
         <div className="flex flex-col-reverse justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
-          <div className="w-full md:w-1/2 text-[16px] lg:w-[1/2] p-4 lg:pl-16">
+          <div className="w-full md:w-1/2 text-[1.1rem] lg:w-[1/2] p-4 lg:pl-16">
             <div className="font-para description text-center sm:text-center md:text-left leading-loose">
               <p>
                 I'm Bijaya Shrestha, A passionate front-end developer with a
@@ -46,21 +44,11 @@ const About = () => {
               transition={{ duration: 1 }}
               className="text-white shadow-lg"
             >
-              <div className="grid gap-y-4 gap-x-4 grid-cols-2">
+              <div className="w-full grid gap-y-4 gap-x-4 grid-cols-2">
                 <img
-                  src={about1}
+                  src={football}
                   alt=""
-                  className="rounded-2xl w-full col-span-2 z-50"
-                />
-                <img
-                  src={about2}
-                  alt=""
-                  className="rounded-2xl w-full h-auto lg:hidden"
-                />
-                <img
-                  src={about3}
-                  alt=""
-                  className="rounded-2xl w-full h-auto lg:hidden"
+                  className="rounded-2xl w-full col-span-2 "
                 />
               </div>
               {/* <div className="image-section flex flex-row justify-center md:w-full">
