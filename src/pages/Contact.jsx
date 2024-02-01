@@ -30,11 +30,8 @@ const Contact = () => {
                 fill="currentColor"
               />
             </svg>
-            <p className="text-2xl font-mulish text-[#2D2E32] mt-5">
-              {" "}
-              Location
-            </p>
-            <p className="text-xl font-mulish text-[#2D2E32] mt-5">
+            <p className="text-xl font-mulish text-[#2D2E32] mt-5"> Location</p>
+            <p className="text-l font-mulish text-[#2D2E32] mt-5">
               Kathmandu, Nepal
             </p>
           </div>
@@ -63,10 +60,10 @@ const Contact = () => {
                 fill="currentColor"
               />
             </svg>
-            <p className="text-2xl font-mulish text-[#2D2E32] mt-5">
+            <p className="text-xl font-mulish text-[#2D2E32] mt-5">
               Mail Address
             </p>
-            <p className="text-xl font-mulish text-[#2D2E32] mt-5">
+            <p className="text-l font-mulish text-[#2D2E32] mt-5">
               beezustha@gmail.com
             </p>
           </div>

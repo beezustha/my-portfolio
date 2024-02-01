@@ -27,10 +27,10 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
-            to="projects"
+            to="project"
             spy={true}
             smooth={true}
-            offset={100}
+            offset={-100}
             duration={500}
             className="cursor-pointer"
           >
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#FCF6F5] p-4 text-[#2D2E32] flex flex-col items-center h-full">
+        <div className="md:hidden bg-[#FCF6F5] p-6 text-[#2D2E32] flex flex-col space-y-4 items-center h-full">
           <Link
             activeClass="active"
             to="/"
@@ -80,7 +80,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="my-[5px] cursor-pointer"
+            className="cursor-pointer"
           >
             Home
           </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="my-[5px] cursor-pointer"
+            className="cursor-pointer"
           >
             About
           </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
             onClick={() => setIsOpen(false)}
-            className="my-[5px] cursor-pointer"
+            className="cursor-pointer"
           >
             My Projects
           </Link>
