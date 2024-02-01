@@ -18,7 +18,7 @@ const Projects = () => {
           </h3>
           <div className="project-details">
             <p className="text-[#2D2E32] text-center font-mulish text-[1.4rem]">
-              <marquee direction="left"> New Projects Coming Soon !</marquee>
+              New Projects Coming Soon !
             </p>
           </div>
         </div>

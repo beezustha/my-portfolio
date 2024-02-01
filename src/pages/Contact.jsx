@@ -9,7 +9,7 @@ const Contact = () => {
             Contact Information
           </h3>
         </div>
-        <div className="contact-icon flex flex-col justify-evenly lg:flex-row lg:justify-between lg:space-x-10">
+        <div className="contact-icon flex flex-col justify-evenly lg:flex-row lg:justify-arpund lg:space-x-10">
           <div className="location flex flex-col items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -22,3 +22,23 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+.marquee {
+  color: #2d2e32;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marqueeAnimation 9s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-125%);
+  }
+}

@@ -4,6 +4,7 @@ import Preloader from "./component/Preloader";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import About from "./pages/About";
+import Banner from "./pages/Banner";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -34,6 +35,7 @@ function App() {
           <About />
           <Projects />
           {/* <Spotify /> */}
+          <Banner />
           <Contact />
           <Footer />
         </BrowserRouter>
@@ -43,5 +45,3 @@ function App() {
 }
 
 export default App;
-
-

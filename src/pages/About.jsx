@@ -14,7 +14,7 @@ const About = () => {
         <img
           src={jupiter}
           alt=""
-          className="absolute w-[120px] top-40 right-10 md:w-[200px] md:top-0 md:right-50 lg:w-[200px] lg:top-0 lg:right-10 z-9999"
+          className="absolute w-[120px] top-0 right-10 md:w-[200px] md:top-0 md:right-50 lg:w-[200px] lg:top-0 lg:right-10 z-9999"
         />
 
         <div className="flex flex-col-reverse items-center justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
