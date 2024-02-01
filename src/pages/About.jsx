@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import about1 from "../assets/img/about-1.png";
-import about2 from "../assets/img/about-2.png";
-import about3 from "../assets/img/about-3.png";
+
 import football from "../assets/img/football.png";
 import jupiter from "../assets/img/jupiter.png";
 const About = () => {
@@ -16,23 +14,31 @@ const About = () => {
         <img
           src={jupiter}
           alt=""
-          className="absolute w-[120px] top-40 right-10 md:w-[200px] md:top-0 md:right-50 lg:w-[300px] lg:top-0 lg:right-10 z-9999"
+          className="absolute w-[120px] top-40 right-10 md:w-[200px] md:top-0 md:right-50 lg:w-[200px] lg:top-0 lg:right-10 z-9999"
         />
-        <div className="header">
-          <h3 className="text-header text-[#c8f560] text-center py-10 font-acorn">
-            About Me
-          </h3>
-        </div>
-        <div className="flex flex-col-reverse justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
-          <div className="w-full md:w-1/2 text-[1.1rem] lg:w-[1/2] p-4 lg:pl-16">
+
+        <div className="flex flex-col-reverse items-center justify-between lg:space-x-4 sm:flex-col sm:space-y-4 lg:flex-row md:flex-row">
+          <div className="w-full md:w-1/2 text-[1rem] lg:w-[1/2] p-4 lg:pl-16">
             <div className="font-para description text-center sm:text-center md:text-left leading-loose">
-              <p>
-                I'm Bijaya Shrestha, A passionate front-end developer with a
-                love for crafting user interfaces that not only look good but
-                also provide seamless experiences. My journey in the world of
-                web development began with a fascination for turning lines of
-                code into visually appealing and functional websites.
-              </p>
+              <div className="flex flex-col ">
+                {" "}
+                <div className="">
+                  <h3 className="text-header text-[#2D2E32] text-center font-acorn font-bold lg:text-left">
+                    About Me
+                  </h3>
+                </div>
+                <p className="lg:w-full lg:inline-block mb-4">
+                  Hey, my name is <span className="font-bold">Bijaya</span>
+                  {""}, and I'm a Frontend Developer. My passion is to create
+                  and develop a clean UI/UX for my users.
+                </p>
+                <p className="lg:w-full lg:inline-block">
+                  My main stack currently is{" "}
+                  <span className="font-bold">ReactJS</span> in combination with
+                  <span className="font-bold"> Tailwind CSS</span> and{" "}
+                  <span className="font-bold">TypeScript</span>.
+                </p>
+              </div>
             </div>
           </div>
           {/* Card Sections */}
