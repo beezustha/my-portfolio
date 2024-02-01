@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-purple-800 p-4 fixed font-poppins top-0 w-full rounded-b-lg shadow-2xl shadow-purple-300 z-100">
+    <nav className="bg-[#FCF6F5] p-4 fixed font-poppins top-0 w-full rounded-b-lg shadow-2xl shadow-black-100 z-100">
       <div className="container mx-auto flex items-center justify-end md:justify-around lg:justify-around">
-        <div className="hidden md:flex text-white font-nav space-x-8 items-center">
+        <div className="hidden md:flex text-[#2D2E32] font-nav space-x-8 items-center">
           <Link
             activeClass="active"
             to="about"
@@ -36,7 +36,7 @@ const Navbar = () => {
           >
             My Projects
           </Link>
-          <Link
+          {/* <Link
             activeClass="active"
             to="experience"
             spy={true}
@@ -46,7 +46,7 @@ const Navbar = () => {
             className="cursor-pointer"
           >
             Experience
-          </Link>
+          </Link> */}
           <Link
             activeClass="active"
             to="contact"
@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* Hamburger icon for mobile */}
         <div className="md:hidden">
           <GiHamburgerMenu
-            className="text-white text-2xl cursor-pointer"
+            className="text-[#2D2E32] text-2xl cursor-pointer"
             onClick={toggleMenu}
           />
         </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-purple-800 p-4 text-white flex flex-col items-center h-full">
+        <div className="md:hidden bg-[#FCF6F5] p-4 text-[#2D2E32] flex flex-col items-center h-full">
           <Link
             activeClass="active"
             to="/"
@@ -98,6 +98,30 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={() => setIsOpen(false)}
+            className="my-[5px] cursor-pointer"
+          >
+            My Projects
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+            onClick={() => setIsOpen(false)}
+            className="cursor-pointer"
+          >
+            Contact
+          </Link>
+          {/* <Link
+            activeClass="active"
             to="experience"
             spy={true}
             smooth={true}
@@ -107,7 +131,7 @@ const Navbar = () => {
             className="my-[5px] cursor-pointer"
           >
             Experience
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>

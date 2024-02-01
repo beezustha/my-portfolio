@@ -3,13 +3,13 @@ import "./custom.css";
 const Home = () => {
   return (
     <>
-      <div className="font-acorn h-full bg-[#FCF6F5] text-black-700">
+      <div id="/" className="font-acorn h-full bg-[#FCF6F5] text-[#2D2E32]">
         <div className="flex flex-col-reverse lg:flex lg:flex-row lg:w-3/4 pt-24 md:justify-between mx-auto">
           {" "}
           {/* hero etxt */}
           <div className="hero-text flex flex-col mt-10 lg:mt-24 ">
             {/* Designation Title */}
-            <h2 className="text-black-500 text-[#4b0908] sm:mb-5">
+            <h2 className="text-black-500 text-[#2D2E32] sm:mb-5">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

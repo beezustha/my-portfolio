@@ -2,30 +2,35 @@ import { motion } from "framer-motion";
 import "./Preloader.css";
 const Preloader = () => {
   return (
-    <motion.div
-      className="fixed inset-0 flex items-center justify-center bg-white"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.svg
-        className="animate-spin h-12 w-12 text-blue-500"
+    <section className="relative w-full max-w-md">
+      {" "}
+      <svg
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        initial={{ rotate: 0 }}
-        animate={{ rotate: 360, transition: { duration: 1, repeat: Infinity } }}
+        viewBox="0 0 150 75"
+        width="150"
+        height="75"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          id="thunder"
+        <path
+          fill="none"
+          stroke="#FF156D"
+          strokeWidth="8"
+          strokeLinecap="round"
+          strokeDasharray="150 192.5"
+          strokeDashoffset="0"
+          d="M137.5 37.5c0 15.5-13.5 25-25 25-29 0-46-50-75-50-14 0-25 11-25 25s11 25 25 25c29 0 46-50 75-50 12 0 25 9.5 25 25Z"
         >
-          <path d="M19.87,8.6A1,1,0,0,0,19,8H14.42l1.27-4.74a1,1,0,0,0-.17-.87A1,1,0,0,0,14.73,2h-7a1,1,0,0,0-1,.74l-2.68,10a1,1,0,0,0,.17.87,1,1,0,0,0,.8.39H8.89L7.08,20.74a1,1,0,0,0,1.71.93l10.9-12A1,1,0,0,0,19.87,8.6Zm-9.79,8.68,1.07-4a1,1,0,0,0-.17-.87,1,1,0,0,0-.79-.39H6.35L8.49,4h4.93L12.15,8.74a1,1,0,0,0,1,1.26h3.57Z"></path>
-        </svg>
-      </motion.svg>
-    </motion.div>
+          <animate
+            attributeName="stroke-dashoffset"
+            calcMode="spline"
+            dur="2"
+            values="342.5;-342.5"
+            keySplines="0 0 1 1"
+            repeatCount="indefinite"
+          ></animate>
+        </path>
+      </svg>
+    </section>
   );
 };
 

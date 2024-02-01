@@ -7,10 +7,7 @@ const Projects = () => {
     window.location.href = "https://github.com/beezustha/ecommerce-application";
   };
   return (
-    <section
-      id="projects"
-      className="relative w-3/4 h-full pb-10 mt-10 mx-auto"
-    >
+    <section id="project" className="relative w-3/4 h-full pb-10 mt-10 mx-auto">
       <div className="project-section">
         <div className="header ">
           <h3 className="text-header text-[#2D2E32] text-center py-10 font-acorn font-bold">
