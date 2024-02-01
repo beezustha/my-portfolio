@@ -31,8 +31,8 @@ const Home = () => {
               >
                 {" "}
                 <p className="font-mulish w-full text-[1.2rem] text-center px-7 py-3 leading-loose mb-6 lg:w-[700px] lg:text-left mx-auto lg:py-0">
-                  <span className="font-bold">Hello!</span>
-                  I'm <span className="font-bold">Bijaya Shrestha</span>. A
+                  <span className="font-bold">Hello! </span>
+                  I'm <span className="font-bold">Bijaya Shrestha</span>, A
                   passionate Front-end React Developer based in Kathmandu, Nepal
                   📍
                 </p>
